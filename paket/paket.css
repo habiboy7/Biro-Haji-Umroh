@@ -1,0 +1,336 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+:root {
+  /* Typography */
+  --font-family-utama: "Poppins", sans-serif;
+  --font-family-second: "Cormorant Garamond", serif;
+  --font-family-third: "Nunito Sans", sans-serif;
+  --font-family-raleway: "Raleway", sans-serif;
+
+  /* Background Color */
+  --bg-utama-darkGreen: #044236;
+  --bg-second-orange: #FF9100;
+  --bg-third-orr: #9b6b43;
+  --bg-four-white: #ffffff;
+
+  /* Font Color */
+  --colorFont-putih: #ffffff;
+  --colorFont-hitam: #000000;
+  --colorFont-hijau: #044236;
+}
+
+/* Navigation */
+#navigasi {
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+  z-index: 9999999;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#navigasi .nav-link {
+  color: var(--colorFont-hitam);
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+
+#navbarNav {
+  font-family: var(--font-family-third);
+  font-size: 1.4rem;
+}
+
+.navbar-brand {
+  margin-left: 170px;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 20px 0 20px;
+}
+
+#navbarNav .nav-link:hover {
+  color: var(--bg-second-orange);
+}
+
+.navbar-nav li:hover {
+  background-color: rgb(0, 113, 45, 0.1);
+  border-radius: 15px;
+}
+
+
+/* Efek scroll */
+#navigasi.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#navigasi.scrolling .nav-link {
+  color: var(--colorFont-hijau);
+}
+
+#navigasi.scrolling .nav-link:hover {
+  color: var(--bg-second-orange);
+}
+
+/* Logo */
+.brandLogo {
+  object-fit: cover;
+  padding-top: 10px;
+  height: 160px;
+  margin-left: 130px;
+  background: none;
+  transition: all 0.2s ease-in-out;
+  color: #044236;
+}
+
+.brandLogo:hover {
+  transform: scale(1.1);
+}
+
+/* Program */
+.program-title {
+  font-family: var(--font-family-raleway);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.kartu {
+  margin-top: 50px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-four-white);
+}
+
+.image-wraper {
+  position: relative;
+  width: 330px;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#poster {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-gradasi {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 2), rgba(0, 0, 0, 0));
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  color: var(--colorFont-putih);
+  font-family: var(--font-family-utama);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 0 3px 8px #FF9100;
+  width: 100%;
+}
+
+.title-program {
+  font-family: var(--font-family-raleway);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.deskripsi-paket {
+  height: auto;
+  width: 100%;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jarak-desk table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.jarak-desk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.icon-desk {
+  width: 10%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.label-desk {
+  font-size: 1rem;
+  width: 50%;
+  text-align: left;
+}
+
+.value-desk {
+  width: 40%;
+  text-align: right;
+}
+
+.star {
+  color: var(--bg-second-orange);
+}
+
+.btn-selengkapnya {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 40px 10px 40px;
+  font-size: 1.3rem;
+  background-color: var(--bg-utama-darkGreen);
+  color: var(--bg-four-white);
+}
+
+.btn-selengkapnya:hover {
+  background-color: var(--bg-second-orange);
+  transition: 0.2s ease-in;
+}
+
+.buttonSpace {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-all-program {
+  padding: 10px 40px 10px 40px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  background-color: var(--bg-second-orange);
+  color: var(--colorFont-putih);
+}
+
+.btn-all-program:hover {
+  background-color: var(--bg-utama-darkGreen);
+  color: var(--colorFont-putih);
+  /* border: 1px solid black; */
+  transition: 0.2s ease-in-out;
+}
+
+footer {
+  margin-top: 80px;
+  background-color: #003d33;
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  height: 460px;
+}
+
+.footer-side {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ktk-foot {
+  margin-top: -30px;
+}
+
+/* Section titles */
+.jamOpr {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+}
+
+/* Text styling */
+.text-foot {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #dcdcdc;
+  font-family: var(--font-family-utama);
+}
+
+/* Image styling */
+#img-footer {
+  margin-top: -40px;
+  max-width: 320px;
+  height: auto;
+}
+
+/* Contact table */
+.contact-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  color: #dcdcdc;
+  font-size: 1rem;
+  font-family: var(--font-family-utama);
+}
+
+.contact-table tr {
+  line-height: 1.8;
+}
+
+.contact-table .icon-cell {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #f5b041;
+  width: 50px;
+}
+
+/* Address icons */
+.text-foot i {
+  color: #f5b041;
+  margin-right: 8px;
+}
+
+.copyR{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lastR {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-family: var(--font-family-utama);
+}

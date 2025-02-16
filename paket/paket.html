@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ya Habibi</title>
+  <!-- ! Link Icon -->
+  <link rel="stylesheet" href="/node_modules/@flaticon/flaticon-uicons/css/all/all.css">
+  <!--! Link Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/paket/paket.css">
+  <!--! Link AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+  <!------- Header -------->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg" id="navigasi" data-aos="fade-up" data-aos-duration="2000"
+      style="background-color: white;">
+      <div class="container-fluid">
+        <!-- Isi logo atau trademark -->
+        <a href="/index.html"><img class="brandLogo" src="/Aset/Ya Habibi (1).png" alt="logo-brand"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" aria-current="page" href="/index.html">Beranda</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/tentang-kami/profil.html">Tentang Kami</a></li>
+            <li class="nav-item"> <a class="nav-link" href="paket.html">Paket</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/galeri/galeri.html">Galeri</a></li>
+            <li class="nav-item"> <a class="nav-link" href="https://wa.me/6281227556950">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div style="height: 80px;"></div> <!-- Spasi -->
+  <section class="program" id="program">
+    <div class="container">
+      <!--? Heading -->
+      <div class="row text-center mt-5 d-flex justify-content-center program-title" data-aos="zoom-in-up"
+        data-aos-duration="2500">Program Tersedia</div>
+
+      <div class="container mt-4" data-aos="fade-up" data-aos-duration="2500">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4">
+            <div class="input-group">
+              <input type="text" placeholder="Cari Program..." id="inp" class="form-control"
+                style="border-radius: 10px 0 0 10px; height: 40px">
+              <button type="button" class="btn btn-dark" id="search"
+                style="border-radius: 0 10px 10px 0; height: 40px; padding-left: 20px; padding-right: 20px; width: 20%;">Cari</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--? Card Program -->
+      <div class="row gap-4 kartu" data-aos="fade-up" data-aos-duration="2500">
+        <div class="col">
+          <div class="card h-100">
+            <!--? Image & Gradasi -->
+            <div class="image-wraper">
+              <img src="/Aset/paket/9.jpeg" id="poster" alt="poster-umroh">
+              <div class="card-gradasi"></div>
+              <div class="price">Rp.36.867.000,-</div>
+            </div>
+            <!--? Deskripsi Card Program  -->
+            <div class="card-body">
+              <h5 class="title-program mt-3">Paket Umroh Plus Turki</h5>
+              <div class="deskripsi-paket">
+                <table class="info-table">
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-calendar-days"></i></td>
+                    <td class="label-desk">Jadwal keberangkatan</td>
+                    <td class="value-desk">12 Jan 2025 </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-time-forward"></i></td>
+                    <td class="label-desk">Durasi Paket</td>
+                    <td class="value-desk">12 Hari</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rs-hotel"></i></td>
+                    <td class="label-desk">Hotel</td>
+                    <td class="value-desk">
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                    </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user-add"></i></td>
+                    <td class="label-desk">Total Seat</td>
+                    <td class="value-desk">62 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user"></i></td>
+                    <td class="label-desk">Available Seat</td>
+                    <td class="value-desk">32 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-land-layer-location"></i></td>
+                    <td class="label-desk">Bandara</td>
+                    <td class="value-desk">Jakarta</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-plane-alt"></i></td>
+                    <td class="label-desk">Maskapai</td>
+                    <td class="value-desk">Saudi Airlines</td>
+                  </tr>
+                </table>
+              </div>
+              <!--? Button Lihat Selengkapnya -->
+              <button class="btn-selengkapnya mt-3" onclick="window.location.href='/detail/detail1.html '">Lihat
+                Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <!--? Image & Gradasi -->
+            <div class="image-wraper">
+              <img src="/Aset/paket/8.jpeg" id="poster" alt="poster-umroh">
+              <div class="card-gradasi"></div>
+              <div class="price">Rp.44.000.000,-</div>
+            </div>
+            <!--? Deskripsi Card Program  -->
+            <div class="card-body">
+              <h5 class="title-program mt-3">Paket Umroh Ramadhan</h5>
+              <div class="deskripsi-paket">
+                <table class="info-table">
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-calendar-days"></i></td>
+                    <td class="label-desk">Jadwal keberangkatan</td>
+                    <td class="value-desk">14 Feb 2025 </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-time-forward"></i></td>
+                    <td class="label-desk">Durasi Paket</td>
+                    <td class="value-desk">1 Bulan </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rs-hotel"></i></td>
+                    <td class="label-desk">Hotel</td>
+                    <td class="value-desk">
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                    </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user-add"></i></td>
+                    <td class="label-desk">Total Seat</td>
+                    <td class="value-desk">50 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user"></i></td>
+                    <td class="label-desk">Available Seat</td>
+                    <td class="value-desk">10 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-land-layer-location"></i></td>
+                    <td class="label-desk">Bandara</td>
+                    <td class="value-desk">Jakarta</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-plane-alt"></i></td>
+                    <td class="label-desk">Maskapai</td>
+                    <td class="value-desk">Saudi Airlines</td>
+                  </tr>
+                </table>
+              </div>
+              <!--? Button Lihat Selengkapnya -->
+              <button class="btn-selengkapnya mt-3" onclick="window.location.href='/detail/detail2.html'">Lihat
+                Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <!--? Image & Gradasi -->
+            <div class="image-wraper">
+              <img src="/Aset/paket/5.jpeg" id="poster" alt="poster-umroh">
+              <div class="card-gradasi"></div>
+              <div class="price">Rp.29.900.000,-</div>
+            </div>
+            <!--? Deskripsi Card Program  -->
+            <div class="card-body">
+              <h5 class="title-program mt-3">Paket Umroh Reguler</h5>
+              <div class="deskripsi-paket">
+                <table class="info-table">
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-calendar-days"></i></td>
+                    <td class="label-desk">Jadwal keberangkatan</td>
+                    <td class="value-desk">10 April 2025 </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-time-forward"></i></td>
+                    <td class="label-desk">Durasi Paket</td>
+                    <td class="value-desk">9 Hari</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rs-hotel"></i></td>
+                    <td class="label-desk">Hotel</td>
+                    <td class="value-desk">
+                      <i class="fi fi-ss-star star" style="color: darkgrey;"></i>
+                      <i class="fi fi-ss-star star" style="color: darkgrey;"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                    </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user-add"></i></td>
+                    <td class="label-desk">Total Seat</td>
+                    <td class="value-desk">50 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user"></i></td>
+                    <td class="label-desk">Available Seat</td>
+                    <td class="value-desk">5 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-land-layer-location"></i></td>
+                    <td class="label-desk">Bandara</td>
+                    <td class="value-desk">Jakarta</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-plane-alt"></i></td>
+                    <td class="label-desk">Maskapai</td>
+                    <td class="value-desk">Garuda Airlines</td>
+                  </tr>
+                </table>
+              </div>
+              <!--? Button Lihat Selengkapnya -->
+              <button class="btn-selengkapnya mt-3" onclick="window.location.href='/detail/detail3.html'">Lihat
+                Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gap-4 kartu" data-aos="fade-up" data-aos-duration="2500">
+        <div class="col">
+          <div class="card h-100">
+            <!--? Image & Gradasi -->
+            <div class="image-wraper">
+              <img src="/Aset/paket/12.jpeg" id="poster" alt="poster-umroh">
+              <div class="card-gradasi"></div>
+              <div class="price">Rp.37.980.000,-</div>
+            </div>
+            <!--? Deskripsi Card Program  -->
+            <div class="card-body">
+              <h5 class="title-program mt-3">Paket Umroh Plus Turki</h5>
+              <div class="deskripsi-paket">
+                <table class="info-table">
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-calendar-days"></i></td>
+                    <td class="label-desk">Jadwal keberangkatan</td>
+                    <td class="value-desk">20 Juni 2025 </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-time-forward"></i></td>
+                    <td class="label-desk">Durasi Paket</td>
+                    <td class="value-desk">12 Hari</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rs-hotel"></i></td>
+                    <td class="label-desk">Hotel</td>
+                    <td class="value-desk">
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                    </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user-add"></i></td>
+                    <td class="label-desk">Total Seat</td>
+                    <td class="value-desk">45 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user"></i></td>
+                    <td class="label-desk">Available Seat</td>
+                    <td class="value-desk">14 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-land-layer-location"></i></td>
+                    <td class="label-desk">Bandara</td>
+                    <td class="value-desk">Jakarta</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-plane-alt"></i></td>
+                    <td class="label-desk">Maskapai</td>
+                    <td class="value-desk">Garuda Airlines</td>
+                  </tr>
+                </table>
+              </div>
+              <!--? Button Lihat Selengkapnya -->
+              <button class="btn-selengkapnya mt-3" onclick="window.location.href='/detail/detail4.html'">Lihat
+                Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <!--? Image & Gradasi -->
+            <div class="image-wraper">
+              <img src="/Aset/paket/1.jpeg" id="poster" alt="poster-umroh">
+              <div class="card-gradasi"></div>
+              <div class="price">Rp.39.860.000,-</div>
+            </div>
+            <!--? Deskripsi Card Program  -->
+            <div class="card-body">
+              <h5 class="title-program mt-3">Paket Umroh Reguler</h5>
+              <div class="deskripsi-paket">
+                <table class="info-table">
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-calendar-days"></i></td>
+                    <td class="label-desk">Jadwal keberangkatan</td>
+                    <td class="value-desk">24 Juli 2025 </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-time-forward"></i></td>
+                    <td class="label-desk">Durasi Paket</td>
+                    <td class="value-desk">16 Hari</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rs-hotel"></i></td>
+                    <td class="label-desk">Hotel</td>
+                    <td class="value-desk">
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                    </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user-add"></i></td>
+                    <td class="label-desk">Total Seat</td>
+                    <td class="value-desk">60 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user"></i></td>
+                    <td class="label-desk">Available Seat</td>
+                    <td class="value-desk">26 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-land-layer-location"></i></td>
+                    <td class="label-desk">Bandara</td>
+                    <td class="value-desk">Jakarta</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-plane-alt"></i></td>
+                    <td class="label-desk">Maskapai</td>
+                    <td class="value-desk">Garuda Airlines</td>
+                  </tr>
+                </table>
+              </div>
+              <!--? Button Lihat Selengkapnya -->
+              <button class="btn-selengkapnya mt-3" onclick="window.location.href='/detail/detail5.html'">Lihat
+                Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <!--? Image & Gradasi -->
+            <div class="image-wraper">
+              <img src="/Aset/paket/3.jpeg" id="poster" alt="poster-umroh">
+              <div class="card-gradasi"></div>
+              <div class="price">Rp.27.000.000,-</div>
+            </div>
+            <!--? Deskripsi Card Program  -->
+            <div class="card-body">
+              <h5 class="title-program mt-3">Paket Umroh Reguler</h5>
+              <div class="deskripsi-paket">
+                <table class="info-table">
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-calendar-days"></i></td>
+                    <td class="label-desk">Jadwal keberangkatan</td>
+                    <td class="value-desk">12 Nov 2025 </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-time-forward"></i></td>
+                    <td class="label-desk">Durasi Paket</td>
+                    <td class="value-desk">9 Hari</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rs-hotel"></i></td>
+                    <td class="label-desk">Hotel</td>
+                    <td class="value-desk">
+                      <i class="fi fi-ss-star star" style="color: darkgrey;"></i>
+                      <i class="fi fi-ss-star star" style="color: darkgrey;"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                      <i class="fi fi-ss-star star"></i>
+                    </td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user-add"></i></td>
+                    <td class="label-desk">Total Seat</td>
+                    <td class="value-desk">40 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-user"></i></td>
+                    <td class="label-desk">Available Seat</td>
+                    <td class="value-desk">30 Pax</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-land-layer-location"></i></td>
+                    <td class="label-desk">Bandara</td>
+                    <td class="value-desk">Jakarta</td>
+                  </tr>
+                  <tr class="jarak-desk">
+                    <td class="icon-desk"><i class="fi fi-rr-plane-alt"></i></td>
+                    <td class="label-desk">Maskapai</td>
+                    <td class="value-desk">Lion Air</td>
+                  </tr>
+                </table>
+              </div>
+              <!--? Button Lihat Selengkapnya -->
+              <button class="btn-selengkapnya mt-3" onclick="window.location.href='/detail/detail6.html'">Lihat
+                Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer mt-5" data-aos="fade-up" data-aos-duration="2500">
+    <div class="container footer-side mt-5">
+      <div class="row">
+        <!-- Jam Operasional -->
+        <div class="col-sm-4 text-center ktk-foot">
+          <h3 class="jamOpr">Jam Operasional</h3>
+          <p class="text-foot">
+            Senin - Jum'at : 08.30 - 15.30<br>
+            Sabtu - Minggu : 08.30 - 15.30
+          </p>
+          <img src="/Aset/Ya Habibi (1).png" id="img-footer" alt="Logo Ya Habibi">
+        </div>
+
+        <!-- Kontak Kami -->
+        <div class="col-sm-4 text-center ktk-foot">
+          <h3 class="jamOpr">Kontak Kami</h3>
+          <table class="contact-table">
+            <tr>
+              <td class="icon-cell"><i class="fi fi-brands-whatsapp"></i></td>
+              <td>Whatsapp:</td>
+              <td>081227556950</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fi fi-brands-instagram"></i></td>
+              <td>Instagram:</td>
+              <td>@bumialfalahjatilawang</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fi fi-rr-envelope-dot"></i></td>
+              <td>E-Mail:</td>
+              <td>habiboy0607@gmail.com</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Alamat -->
+        <div class="col-sm-4 text-center ktk-foot">
+          <h3 class="jamOpr">Alamat</h3>
+          <p class="text-foot">
+            <i class="fi fi-rr-marker"></i> Alamat Banyumas<br>
+            Jl. Aljibarang - Kedungurang No.7,<br>
+            Kab. Banyumas, Jawa Tengah 53164<br><br>
+            <i class="fi fi-rr-marker"></i> Alamat Yogyakarta<br>
+            Jl. Sleman Kota - Bantul No. 12,<br>
+            Kota Yogyakarta 55244
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyR text-center">
+    <p class="lastR">Copyright © 2024 PT Ya Habibi - All Right Reserved.</p>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="/tentang-kami/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="jquery.js"></script>
+</body>
+
+</html>

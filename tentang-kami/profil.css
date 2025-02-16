@@ -1,0 +1,367 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-raleway);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+:root {
+  /* Typography */
+  --font-family-utama: "Poppins", sans-serif;
+  --font-family-second: "Cormorant Garamond", serif;
+  --font-family-third: "Nunito Sans", sans-serif;
+  --font-family-raleway: "Raleway", sans-serif;
+
+  /* Background Color */
+  --bg-utama-darkGreen: #044236;
+  --bg-second-orange: #FF9100;
+  --bg-third-orr: #9b6b43;
+  --bg-four-white: #ffffff;
+
+  /* Font Color */
+  --colorFont-putih: #ffffff;
+  --colorFont-hitam: #000000;
+  --colorFont-hijau: #044236;
+}
+
+/* Navigation */
+#navigasi {
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+  z-index: 9999999;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#navigasi .nav-link {
+  color: var(--colorFont-hitam);
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+
+#navbarNav {
+  font-family: var(--font-family-third);
+  font-size: 1.4rem;
+}
+
+.navbar-brand {
+  margin-left: 170px;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 20px 0 20px;
+}
+
+#navbarNav .nav-link:hover {
+  color: var(--bg-second-orange);
+}
+
+.navbar-nav li:hover {
+  background-color: rgb(0, 113, 45, 0.1);
+  border-radius: 15px;
+}
+
+
+/* Efek scroll */
+#navigasi.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#navigasi.scrolling .nav-link {
+  color: var(--colorFont-hijau);
+}
+
+#navigasi.scrolling .nav-link:hover {
+  color: var(--bg-second-orange);
+}
+
+/* Logo */
+.brandLogo {
+  object-fit: cover;
+  padding-top: 10px;
+  height: 160px;
+  margin-left: 130px;
+  background: none;
+  transition: all 0.2s ease-in-out;
+  color: #044236;
+}
+
+.brandLogo:hover {
+  transform: scale(1.1);
+}
+
+/* Main content */
+
+.hero-section {
+  position: relative;
+  height: auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: var(--font-secondary);
+  color: white;
+  font-size: 2.2rem;
+  text-align: center;
+  padding-top: 55px;
+  font-weight: 600;
+}
+
+.content-section {
+  background: white;
+  padding: 50px 20px;
+}
+
+.logo {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: var(--font-secondary);
+  font-size: 1.8rem;
+  color: var(--bg-dark);
+  margin-bottom: 20px;
+}
+
+.ket-profil {
+  text-align: justify;
+}
+
+/* Selingan */
+.selingan {
+  background-color: var(--bg-utama-darkGreen);
+  margin-top: 100px;
+}
+
+.sloganDaftar {
+  color: var(--colorFont-putih);
+}
+.button-daftar a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+.button-daftar {
+  font-family: var(--font-family-raleway);
+  font-size: 1.3rem;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--bg-second-orange);
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--colorFont-hitam);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button-daftar:hover a{
+  color: var(--colorFont-hitam); 
+}
+
+.button-daftar:hover {
+  background-color: var(--bg-four-white);
+  color: var(--colorFont-hitam);
+}
+
+.button-daftar:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button-daftar:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button-daftar:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+
+
+/* Faq */
+
+.title-accordion {
+  font-weight: bold;
+}
+
+.img-pintu {
+  object-fit: cover;
+  height: 700px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.accordion-body {
+  text-align: justify;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+/* maps */
+.title-maps {
+  font-weight: bold;
+}
+
+.maps {
+  margin-top: 100px;
+}
+
+.alamat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapframe {
+  border-radius: 25px;
+  border: 3px solid #044236;
+}
+.dua{
+  margin-left: 60px;
+}
+
+/* footer */
+.footer {
+  margin-top: 80px;
+  background-color: #003d33;
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  height: 460px;
+}
+
+.footer-side {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ktk-foot {
+  margin-top: -30px;
+}
+
+/* Section titles */
+.jamOpr {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+}
+
+/* Text styling */
+.text-foot {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #dcdcdc;
+  font-family: var(--font-family-utama);
+}
+
+/* Image styling */
+#img-footer {
+  margin-top: -40px;
+  max-width: 320px;
+  height: auto;
+}
+
+/* Contact table */
+.contact-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  color: #dcdcdc;
+  font-size: 1rem;
+  font-family: var(--font-family-utama);
+}
+
+.contact-table tr {
+  line-height: 1.8;
+}
+
+.contact-table .icon-cell {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #f5b041;
+  width: 50px;
+}
+
+/* Address icons */
+.text-foot i {
+  color: #f5b041;
+  margin-right: 8px;
+}
+
+.copyR{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lastR {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-family: var(--font-family-utama);
+}
